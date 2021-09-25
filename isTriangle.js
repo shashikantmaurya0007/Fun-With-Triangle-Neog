@@ -19,6 +19,8 @@ function isTriangle() {
 
     if (sum == 180) {
         // output.innerText = "<h1>hello</h1>";
-        output.innerHTML = "<h1>hello</h1>";
+        output.innerHTML = "<h1>Triangle is correct!</h1>";
+    } else {
+        output.innerHTML = "<h1>Oops it is not correct!</h1>";
     }
 }
