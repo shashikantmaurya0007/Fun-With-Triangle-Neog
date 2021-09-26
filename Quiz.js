@@ -18,7 +18,7 @@ sumbitButton.addEventListener(
             }
             index++;
         }
-        output.innerText = "hey your score is " + score;
+        output.innerHTML = "<h3> hey your score is" + score + "</h3>";
     }
 );
 
