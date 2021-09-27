@@ -13,7 +13,7 @@ function calculate() {
     const height = Number(input[1].value);
     if (base <= 0 || height <= 0) {
         alert(
-            "Base and height needs to be a positive number please enter the correct data"
+            "Base and height needs to be a positive number and can't be left emty please enter the correct data"
         );
         return;
     }
