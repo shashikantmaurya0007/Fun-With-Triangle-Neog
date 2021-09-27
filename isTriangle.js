@@ -11,11 +11,14 @@ function calculateSum(a, b, c) {
 }
 
 function isTriangle() {
-    let sum = calculateSum(
-        Number(inputs[0].value),
-        Number(inputs[1].value),
-        Number(inputs[2].value)
-    );
+    const side1 = Number(inputs[0].value);
+    const side2 = Number(inputs[1].value);
+    const side3 = Number(inputs[2].value);
+    if (side1 < 1 || side2 < 1 || side3 < 1) {
+        alert("sides cant be negative and empty please give the correct input");
+        return;
+    }
+    let sum = calculateSum(side1, side2, side3);
 
     if (sum == 180) {
         // output.innerText = "<h1>hello</h1>";
