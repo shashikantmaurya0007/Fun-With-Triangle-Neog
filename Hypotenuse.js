@@ -12,7 +12,7 @@ function calculate() {
     const side1 = Number(input[0].value);
     const side2 = Number(input[1].value);
     if (side1 < 1 || side2 < 1) {
-        alert("side 1 and side2 needs to be a positive value and can't be empty");
+        alert("a and b needs to be a positive value and can't be empty");
         return;
     }
     const sumOfSquares = squares(side1, side2);
