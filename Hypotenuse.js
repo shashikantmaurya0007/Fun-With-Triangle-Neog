@@ -9,7 +9,13 @@ function squares(a, b) {
 }
 
 function calculate() {
-    const sumOfSquares = squares(Number(input[0].value), Number(input[1].value));
+    const side1 = Number(input[0].value);
+    const side2 = Number(input[1].value);
+    if (side1 < 1 || side2 < 1) {
+        alert("side 1 and side2 needs to be a positive value");
+        return;
+    }
+    const sumOfSquares = squares(side1, side2);
 
     const sqrt = Math.sqrt(sumOfSquares);
 

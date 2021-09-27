@@ -9,7 +9,16 @@ function area(a, b) {
 }
 
 function calculate() {
-    const area1 = area(Number(input[0].value), Number(input[1].value));
+    const base = Number(input[0].value);
+    const height = Number(input[1].value);
+    if (base <= 0 || height <= 0) {
+        alert(
+            "Base and height needs to be a positive number please enter the correct data"
+        );
+        return;
+    }
+    const area1 = area(base, height);
 
-    output.innerHTML = "<h1> The Area of the triangel is  " + area1 + " </h1>";
+    output.innerHTML =
+        "<h1> The Area of the triangel is  " + area1 + " sq.Unit</h1>";
 }
