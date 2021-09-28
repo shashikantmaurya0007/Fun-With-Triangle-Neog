@@ -13,17 +13,18 @@ sumbitButton.addEventListener(
         const arr = [];
         for (let value of formvalue.values()) {
             // console.log(value + "" + result[index]);
-            console.log(value);
-            arr.push(value);
+            // console.log(value);
+            arr.push(1);
             if (value === result[index]) {
+                console.log(value);
                 score++;
             }
             index++;
         }
         console.log(arr.length);
-        if (arr.length == 0) {
+        if (arr.length != 5) {
             output.innerHTML =
-                "<h3>*please atlease answer one quiz to get the score*</h3>";
+                "<h3>*please attempt all the question to get the score you can-not skip any question*</h3>";
         } else {
             output.innerHTML = "<h3> hey your score is" + score + "</h3>";
         }
