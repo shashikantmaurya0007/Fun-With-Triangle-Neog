@@ -20,5 +20,5 @@ function calculate() {
     const sqrt = Math.sqrt(sumOfSquares);
 
     output.innerHTML =
-        "<h1> The hypotenuse of the triangel is  " + sqrt + " </h1>";
+        "<h1> The hypotenuse of the triangel is  " + sqrt.toFixed(2) + "unit </h1>";
 }

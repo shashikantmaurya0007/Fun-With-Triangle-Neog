@@ -20,5 +20,5 @@ function calculate() {
     const area1 = area(base, height);
 
     output.innerHTML =
-        "<h1> The Area of the triangel is  " + area1 + " sq.Unit</h1>";
+        "<h1> The Area of the triangel is  " + area1.toFixed(2) + " sq.Unit</h1>";
 }

@@ -10,15 +10,23 @@ sumbitButton.addEventListener(
         const formvalue = new FormData(quizForm);
         let index = 0;
         let score = 0;
-        console.log("clicked");
+        const arr = [];
         for (let value of formvalue.values()) {
             // console.log(value + "" + result[index]);
+            console.log(value);
+            arr.push(value);
             if (value === result[index]) {
                 score++;
             }
             index++;
         }
-        output.innerHTML = "<h3> hey your score is" + score + "</h3>";
+        console.log(arr.length);
+        if (arr.length == 0) {
+            output.innerHTML =
+                "<h3>*please atlease answer one quiz to get the score*</h3>";
+        } else {
+            output.innerHTML = "<h3> hey your score is" + score + "</h3>";
+        }
     }
 );
 
