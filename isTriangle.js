@@ -15,7 +15,9 @@ function isTriangle() {
     const side2 = Number(inputs[1].value);
     const side3 = Number(inputs[2].value);
     if (side1 < 1 || side2 < 1 || side3 < 1) {
-        alert("sides cant be negative and empty please give the correct input");
+        alert(
+            "angle cant be negative,zero and empty please give the correct input"
+        );
         return;
     }
     let sum = calculateSum(side1, side2, side3);
